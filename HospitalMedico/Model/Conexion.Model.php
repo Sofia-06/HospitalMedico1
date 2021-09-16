@@ -13,12 +13,12 @@
           $servidor="localhost:3307";
            $pass="";
            $user="root";
-           $MariaDB="hospmed";
+           $DB="hospmed";
         
 
-           parent::__construct($servidor,$user,$pass,$MariaDB);
+           parent::__construct($servidor,$user,$pass,$DB);
            $this->query("SET NAMES 'utf8';");
-           $this->connect_errno ? die('Error en la conexion'): $error="Conectado a ".$MariaDB;
+           $this->connect_errno ? die('Error en la conexion'): $error="Conectado a ".$DB;
            //echo $error;
            unset ($error);
        } 
