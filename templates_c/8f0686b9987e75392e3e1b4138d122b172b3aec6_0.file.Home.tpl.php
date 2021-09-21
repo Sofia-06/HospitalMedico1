@@ -1,6 +1,32 @@
-{include file="Cabeceras/Header.tpl"}
-    <nav>
-        <div class="nav-wrapper #69f0ae green accent-2">
+<?php
+/* Smarty version 3.1.39, created on 2021-09-20 16:50:08
+  from 'C:\xampp\htdocs\HospitalPortlandVF\HospitalMedico\templates\Home.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_61489fa02e6700_81913846',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '8f0686b9987e75392e3e1b4138d122b172b3aec6' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\HospitalPortlandVF\\HospitalMedico\\templates\\Home.tpl',
+      1 => 1630802840,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:Cabeceras/Header.tpl' => 1,
+    'file:Cabeceras/Footer.tpl' => 1,
+  ),
+),false)) {
+function content_61489fa02e6700_81913846 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_subTemplateRender("file:Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+<nav>
+        <div class="nav-wrapper #ffeb3b yellow">
           <a href="" class="brand-logo">Hospital Portland</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
           </ul>
@@ -10,63 +36,39 @@
       <br/>
       <br/>
       <br/>
+    <div align="center">
+    <h1>¡Bienvenido a Hospital Portland!</h1>
+    <h3> Elige que rol eres...</h3>
+    </div>
 
- <div class="row" align="center">
+    <div class="card-panel #eeff41 lime accent-1"></div>
+<div class="center-align">
+    <div class="container">
 
-        <div class="col 1">
-        </div>
-
-        
-             
-            <div class="container">
-          <div class="col 7">
-            {if isset($rol)}
-                {if $rol=='agendCita'}
-                    {include file='Cliente/AgendarCita.tpl'}
-                {else if $rol=='agendCovid'}
-                    {include file='Cliente/AgendarCovid.tpl'}
-                {else if $rol=='ubicaciones'}
-                    {include file='Cliente/Ubicaciones.tpl'}
-                {/if}
-            {else}
-              <div class="col 7" align="center">
-              <h1>¡Bienvenido a Hospital Portland!</h1>
-              <h3>Elige lo que deseas hacer a continuación...</h3>
-              <br/>
-              <br/><div background= "red ligten-3"></div>
+        <div background= "red ligten-3"></div>
     
         <div class ="row">
             <div class="input field col s12">
-            <a href="?controller=Cliente&method=AgendCita" class="waves-effect waves-light btn-large"><i class="material-icons left">event_note</i>Agendar cita médica</a>
+            <a href="?controller=Cliente&method=Ingreso" class="waves-effect waves-light btn-large"><i class="material-icons left">people_outline</i>Cliente</a>
             </button>
             </div>
         </div> 
         <div class ="row">
             <div class="input field col s12">
-            <a href="?controller=Cliente&method=AgendCovid" class="waves-effect waves-light btn-large"><i class="material-icons left">dns</i>COVID - 19</a>
+            <a a href="?controller=Secre&method=IngresoSecre" class="waves-effect waves-light btn-large"><i class="material-icons left">contact_mail</i>Secretaria</a>
         </button>
             </div>
         </div> 
         <div class ="row">
             <div class="input field col s12">
-            <a href="?controller=Cliente&method=Ubicaciones" class="waves-effect waves-light btn-large"><i class="material-icons left">location_on</i>Ubicaciones</a>
+            <a a href="?controller=Doc&method=IngresoDoc" class="waves-effect waves-light btn-large"><i class="material-icons left">add_box</i>Doctor</a>
         </button>
             </div>
         </div> 
-            {/if}
-        </div>
-        
     </div>
-        </div>
-        <div class="center-align">
-    
 </div>
- </div>
- <br/>
- <br/>
- <br/>
- <br/>
- <footer class="page-footer #69f0ae green accent-2">
+
+<footer class="page-footer #ffeb3b yellow">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -92,5 +94,7 @@
             </div>
           </div>
         </footer>
-
-{include file="Cabeceras/Footer.tpl"}
+    
+<?php $_smarty_tpl->_subTemplateRender("file:Cabeceras/Footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+}
+}

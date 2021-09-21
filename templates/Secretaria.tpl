@@ -24,12 +24,21 @@
                     {include file='Secretaria/PacienteNuevo.tpl'}
                 {else if $rol=='salas'}
                     {include file='Secretaria/Salas.tpl'}
+                    
                 {/if}
                 {else}
                  <h1>Bienvenida Secretaria</h1>
                   <br/>
                   <br/>
                   <br/>
+
+                <div class ="row">
+                  <div class="input field col s12">
+                    <a href="?controller=Secre&method=Turnos" class="waves-effect waves-light btn-large"><i class="material-icons left">account_box</i>Asignación de Turnos</a>
+                    </button>
+                  </div>
+                </div>
+
                 <div class ="row">
                     <div class="input field col s12">
                     <a href="?controller=Secre&method=PacienteE" class="waves-effect waves-light btn-large"><i class="material-icons left">account_circle</i>Paciente ya existente</a>
@@ -37,16 +46,14 @@
                     </div>
                     <br/>
                 <br/>
-                <br/>
-                <br/>
                 </div> 
                 <div class ="row">
                     <div class="input field col s12">
                     <a href="?controller=Secre&method=PacienteN" class="waves-effect waves-light btn-large"><i class="material-icons left">account_box</i>Paciente Nuevo</a>
                     </button>
                     </div>
-                </div> 
-                <br/>
+                </div>  
+                
                 <div class ="row">
                     <div class="input field col s12">
                     <a href="?controller=Secre&method=Salas" class="waves-effect waves-light btn-large"><i class="material-icons left">account_box</i>Ver Salas</a>

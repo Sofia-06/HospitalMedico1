@@ -1,4 +1,30 @@
-{include file="Cabeceras/Header.tpl"}
+<?php
+/* Smarty version 3.1.39, created on 2021-09-20 22:19:54
+  from 'C:\xampp\htdocs\HospitalPortlandVF\HospitalMedico\Cliente\AgendarCovid.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_6148eceaefd341_58817025',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '418c0f0ef4905103f1937995d2fb0845828ee8ad' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\HospitalPortlandVF\\HospitalMedico\\Cliente\\AgendarCovid.tpl',
+      1 => 1632169190,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:Cabeceras/Header.tpl' => 1,
+    'file:Cabeceras/Footer.tpl' => 1,
+  ),
+),false)) {
+function content_6148eceaefd341_58817025 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_subTemplateRender("file:Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
 <div class="row" align="center">
 <h1>COVID-19</h1>
     <div class="card-panel teal lighten-4">
@@ -163,4 +189,6 @@
       </div>
     </form>
   </div>
-{include file="Cabeceras/Footer.tpl"}
+<?php $_smarty_tpl->_subTemplateRender("file:Cabeceras/Footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+}
+}

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-19 20:46:07
-  from 'C:\xamppp\htdocs\HospitalMedico\HospitalMedico\Doctor\VerPacientes.tpl' */
+/* Smarty version 3.1.39, created on 2021-09-20 04:29:42
+  from 'C:\xampp2\htdocs\HospitalPortlandVF\HospitalMedico\Doctor\VerPacientes.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6147856f1d3ea5_61396621',
+  'unifunc' => 'content_6147f216d370d1_30585693',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '9f0cb761b220a39e113cf2752f88ea2b9890e6ac' => 
+    'c6cab65bcb4ed05c1234a3797fea3a92088b772a' => 
     array (
-      0 => 'C:\\xamppp\\htdocs\\HospitalMedico\\HospitalMedico\\Doctor\\VerPacientes.tpl',
-      1 => 1632077162,
+      0 => 'C:\\xampp2\\htdocs\\HospitalPortlandVF\\HospitalMedico\\Doctor\\VerPacientes.tpl',
+      1 => 1632077164,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_6147856f1d3ea5_61396621 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6147f216d370d1_30585693 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="row">

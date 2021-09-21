@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-20 01:33:35
-  from 'C:\xamppp\htdocs\HospitalMedico\HospitalMedico\Doctor\BuscarHistorial.tpl' */
+/* Smarty version 3.1.39, created on 2021-09-20 04:28:17
+  from 'C:\xampp2\htdocs\HospitalPortlandVF\HospitalMedico\Doctor\BuscarHistorial.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6147c8cfa18118_12114773',
+  'unifunc' => 'content_6147f1c12c7ed7_92040378',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '5a48c3c7ebc35b7d0b6237d19e0928f8efa02f11' => 
+    '5f2dd4f940e6d22f9fc0b152c492f6d3856c5d63' => 
     array (
-      0 => 'C:\\xamppp\\htdocs\\HospitalMedico\\HospitalMedico\\Doctor\\BuscarHistorial.tpl',
-      1 => 1632094412,
+      0 => 'C:\\xampp2\\htdocs\\HospitalPortlandVF\\HospitalMedico\\Doctor\\BuscarHistorial.tpl',
+      1 => 1632094414,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_6147c8cfa18118_12114773 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6147f1c12c7ed7_92040378 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <h1>Buscar historial clinico</h1>

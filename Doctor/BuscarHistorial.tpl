@@ -16,19 +16,21 @@
             <table>
         <thead>
           <tr>
-              <th>Nombre</th>
+              <th>DPI</th>
               <th>Diagnóstico</th>
               <th>Medicamentos</th>
           </tr>
         </thead>
-
-        <tbody>
+        {foreach from=$paci item=$row}
           <tr>
-            <td>Alvin</td>
-            <td>Eclair</td>
-            <td>$0.87</td>
+            <td>{$row['dpi']}</td>
+            <td>{$row['diagnostico']}</td>
+            <td>{$row['medicina']}</td>
+            
           </tr>
-        </tbody>
+          {/foreach}
+
+        
       </table>
             
 {include file="Cabeceras/Footer.tpl"}

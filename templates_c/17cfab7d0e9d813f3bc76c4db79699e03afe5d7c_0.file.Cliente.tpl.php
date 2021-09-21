@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-18 04:16:50
+/* Smarty version 3.1.39, created on 2021-09-20 23:16:44
   from 'C:\xamppp\htdocs\HospitalMedico\HospitalMedico\templates\Cliente.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_61454c1273a215_95997241',
+  'unifunc' => 'content_6148fa3c444f02_81913122',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '17cfab7d0e9d813f3bc76c4db79699e03afe5d7c' => 
     array (
       0 => 'C:\\xamppp\\htdocs\\HospitalMedico\\HospitalMedico\\templates\\Cliente.tpl',
-      1 => 1630803068,
+      1 => 1632172602,
       2 => 'file',
     ),
   ),
@@ -25,7 +25,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_61454c1273a215_95997241 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6148fa3c444f02_81913122 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
     <nav>
@@ -75,7 +75,7 @@ $_smarty_tpl->_subTemplateRender("file:Cabeceras/Header.tpl", $_smarty_tpl->cach
         </div> 
         <div class ="row">
             <div class="input field col s12">
-            <a href="?controller=Cliente&method=AgendCovid" class="waves-effect waves-light btn-large"><i class="material-icons left">dns</i>Agendar prueba COVID-19</a>
+            <a href="?controller=Cliente&method=AgendCovid" class="waves-effect waves-light btn-large"><i class="material-icons left">dns</i>COVID - 19</a>
         </button>
             </div>
         </div> 

@@ -1,4 +1,33 @@
-{include file="Cabeceras/Header.tpl"}
+<?php
+/* Smarty version 3.1.39, created on 2021-09-20 16:50:13
+  from 'C:\xampp\htdocs\HospitalPortlandVF\HospitalMedico\templates\Cliente.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_61489fa5e865b9_33594715',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'fef4b273ee9e6ff6fe99fd594972f0b0133e8a31' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\HospitalPortlandVF\\HospitalMedico\\templates\\Cliente.tpl',
+      1 => 1630803068,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:Cabeceras/Header.tpl' => 1,
+    'file:Cliente/AgendarCita.tpl' => 1,
+    'file:Cliente/AgendarCovid.tpl' => 1,
+    'file:Cliente/Ubicaciones.tpl' => 1,
+    'file:Cabeceras/Footer.tpl' => 1,
+  ),
+),false)) {
+function content_61489fa5e865b9_33594715 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_subTemplateRender("file:Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
     <nav>
         <div class="nav-wrapper #69f0ae green accent-2">
           <a href="" class="brand-logo">Hospital Portland</a>
@@ -20,15 +49,18 @@
              
             <div class="container">
           <div class="col 7">
-            {if isset($rol)}
-                {if $rol=='agendCita'}
-                    {include file='Cliente/AgendarCita.tpl'}
-                {else if $rol=='agendCovid'}
-                    {include file='Cliente/AgendarCovid.tpl'}
-                {else if $rol=='ubicaciones'}
-                    {include file='Cliente/Ubicaciones.tpl'}
-                {/if}
-            {else}
+            <?php if ((isset($_smarty_tpl->tpl_vars['rol']->value))) {?>
+                <?php if ($_smarty_tpl->tpl_vars['rol']->value == 'agendCita') {?>
+                    <?php $_smarty_tpl->_subTemplateRender('file:Cliente/AgendarCita.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+                <?php } elseif ($_smarty_tpl->tpl_vars['rol']->value == 'agendCovid') {?>
+                    <?php $_smarty_tpl->_subTemplateRender('file:Cliente/AgendarCovid.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+                <?php } elseif ($_smarty_tpl->tpl_vars['rol']->value == 'ubicaciones') {?>
+                    <?php $_smarty_tpl->_subTemplateRender('file:Cliente/Ubicaciones.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+                <?php }?>
+            <?php } else { ?>
               <div class="col 7" align="center">
               <h1>¡Bienvenido a Hospital Portland!</h1>
               <h3>Elige lo que deseas hacer a continuación...</h3>
@@ -43,7 +75,7 @@
         </div> 
         <div class ="row">
             <div class="input field col s12">
-            <a href="?controller=Cliente&method=AgendCovid" class="waves-effect waves-light btn-large"><i class="material-icons left">dns</i>COVID - 19</a>
+            <a href="?controller=Cliente&method=AgendCovid" class="waves-effect waves-light btn-large"><i class="material-icons left">dns</i>Agendar prueba COVID-19</a>
         </button>
             </div>
         </div> 
@@ -53,7 +85,7 @@
         </button>
             </div>
         </div> 
-            {/if}
+            <?php }?>
         </div>
         
     </div>
@@ -93,4 +125,6 @@
           </div>
         </footer>
 
-{include file="Cabeceras/Footer.tpl"}
+<?php $_smarty_tpl->_subTemplateRender("file:Cabeceras/Footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+}
+}

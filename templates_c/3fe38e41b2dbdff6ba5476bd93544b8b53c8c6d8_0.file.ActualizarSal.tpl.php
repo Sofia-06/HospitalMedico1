@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-20 23:17:43
-  from 'C:\xamppp\htdocs\HospitalMedico\HospitalMedico\Doctor\ActualizarSal.tpl' */
+/* Smarty version 3.1.39, created on 2021-09-20 04:55:34
+  from 'C:\xampp2\htdocs\HospitalPortlandVF\HospitalMedico\Doctor\ActualizarSal.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6148fa778b6bb4_18681726',
+  'unifunc' => 'content_6147f8264ac832_67944128',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'b26b450398d2f31be6ceab60ad29a2982d66e77e' => 
+    '3fe38e41b2dbdff6ba5476bd93544b8b53c8c6d8' => 
     array (
-      0 => 'C:\\xamppp\\htdocs\\HospitalMedico\\HospitalMedico\\Doctor\\ActualizarSal.tpl',
-      1 => 1632106532,
+      0 => 'C:\\xampp2\\htdocs\\HospitalPortlandVF\\HospitalMedico\\Doctor\\ActualizarSal.tpl',
+      1 => 1632106531,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:Cabeceras/Header.tpl' => 2,
   ),
 ),false)) {
-function content_6148fa778b6bb4_18681726 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6147f8264ac832_67944128 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="row">

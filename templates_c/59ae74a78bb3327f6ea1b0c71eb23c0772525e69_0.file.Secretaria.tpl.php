@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-21 04:10:59
-  from 'C:\xamppp\htdocs\HospitalMedico\HospitalMedico\templates\Secretaria.tpl' */
+/* Smarty version 3.1.39, created on 2021-09-20 04:27:19
+  from 'C:\xampp2\htdocs\HospitalPortlandVF\HospitalMedico\templates\Secretaria.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_61493f33cf9533_28686021',
+  'unifunc' => 'content_6147f1871ad5a4_04529906',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '5ed217b6140d09c85aa54785b19cb770fbe656c0' => 
+    '59ae74a78bb3327f6ea1b0c71eb23c0772525e69' => 
     array (
-      0 => 'C:\\xamppp\\htdocs\\HospitalMedico\\HospitalMedico\\templates\\Secretaria.tpl',
-      1 => 1632190229,
+      0 => 'C:\\xampp2\\htdocs\\HospitalPortlandVF\\HospitalMedico\\templates\\Secretaria.tpl',
+      1 => 1631899196,
       2 => 'file',
     ),
   ),
@@ -22,11 +22,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:Secretaria/PacienteExistente.tpl' => 1,
     'file:Secretaria/PacienteNuevo.tpl' => 1,
     'file:Secretaria/Salas.tpl' => 1,
-    'file:Secretaria/Turnos.tpl' => 1,
     'file:Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_61493f33cf9533_28686021 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6147f1871ad5a4_04529906 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
     <nav>
@@ -57,23 +56,12 @@ $_smarty_tpl->_subTemplateRender("file:Cabeceras/Header.tpl", $_smarty_tpl->cach
                 <?php } elseif ($_smarty_tpl->tpl_vars['rol']->value == 'salas') {?>
                     <?php $_smarty_tpl->_subTemplateRender('file:Secretaria/Salas.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
-                <?php } elseif ($_smarty_tpl->tpl_vars['rol']->value == 'Turnos') {?>
-                    <?php $_smarty_tpl->_subTemplateRender('file:Secretaria/Turnos.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-?>    
                 <?php }?>
                 <?php } else { ?>
                  <h1>Bienvenida Secretaria</h1>
                   <br/>
                   <br/>
                   <br/>
-
-                <div class ="row">
-                  <div class="input field col s12">
-                    <a href="?controller=Secre&method=Turnos" class="waves-effect waves-light btn-large"><i class="material-icons left">account_box</i>Asignación de Turnos</a>
-                    </button>
-                  </div>
-                </div>
-
                 <div class ="row">
                     <div class="input field col s12">
                     <a href="?controller=Secre&method=PacienteE" class="waves-effect waves-light btn-large"><i class="material-icons left">account_circle</i>Paciente ya existente</a>
@@ -81,14 +69,16 @@ $_smarty_tpl->_subTemplateRender("file:Cabeceras/Header.tpl", $_smarty_tpl->cach
                     </div>
                     <br/>
                 <br/>
+                <br/>
+                <br/>
                 </div> 
                 <div class ="row">
                     <div class="input field col s12">
                     <a href="?controller=Secre&method=PacienteN" class="waves-effect waves-light btn-large"><i class="material-icons left">account_box</i>Paciente Nuevo</a>
                     </button>
                     </div>
-                </div>  
-                
+                </div> 
+                <br/>
                 <div class ="row">
                     <div class="input field col s12">
                     <a href="?controller=Secre&method=Salas" class="waves-effect waves-light btn-large"><i class="material-icons left">account_box</i>Ver Salas</a>
